@@ -1,0 +1,16 @@
+rvm:
+  - 1.9.2
+  - 1.9.3
+
+branches:
+  only:
+    - master
+
+env: DB=mysql
+
+before_script:
+  - mysql -e 'create database basic_app_test;'
+  - cp config/database.yml.example config/database.yml
+  - bundle exec rake db:schema:load RAILS_ENV=test
+
+script: 'bundle exec rspec'
