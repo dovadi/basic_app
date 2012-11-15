@@ -5,8 +5,7 @@
     %meta{ :name => 'keywords', :content => '' }
     %meta{ :name => 'description', :content => '' }
 
-    %title EmonWeb
-    %link{:rel=>'stylesheet', :href=>'http://twitter.github.com/bootstrap/assets/css/bootstrap-1.2.0.min.css'}
+    %title Basic App
     = stylesheet_link_tag    :application
     = javascript_include_tag :application
     = csrf_meta_tag
@@ -19,12 +18,12 @@
       = render :partial => 'layouts/user_menu'
 
       .page-header
-        %h1=link_to 'emonWeb', root_path
+        %h1=link_to 'Basic App', root_path
 
       .content
         = render :partial => 'layouts/flashes'
         = yield
 
       .footer
-        %a{ :href => 'http://openenergymonitor.org' }
-          Open Energy Monitor
+        %a{ :href => '/' }
+          Basic application with devise and bootstrap

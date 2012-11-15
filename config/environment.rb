@@ -2,4 +2,4 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the rails application
-Emonweb::Application.initialize!
+BasicApp::Application.initialize!

@@ -15,7 +15,7 @@ feature 'Admin', %q{
     sign_in_as @user
     click_link 'Admin'
     within 'title' do
-      page.should have_content('Site administration | Emonweb Admin')
+      page.should have_content('Site administration | Basic App Admin')
     end
   end
 

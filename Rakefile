@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Emonweb::Application.load_tasks
+BasicApp::Application.load_tasks

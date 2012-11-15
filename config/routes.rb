@@ -1,4 +1,4 @@
-Emonweb::Application.routes.draw do
+BasicApp::Application.routes.draw do
 
   root :to => "home#index"
 

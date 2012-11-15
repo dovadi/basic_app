@@ -1,4 +1,4 @@
-Emonweb::Application.configure do
+BasicApp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -49,7 +49,7 @@ Emonweb::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  config.action_mailer.default_url_options = { :host => 'emonweb.org' }
+  config.action_mailer.default_url_options = { :host => 'basicapp.org' }
 
   ActionMailer::Base.smtp_settings = {
     :address        => "smtp.sendgrid.net",
